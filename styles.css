@@ -59,3 +59,55 @@ footer {
   width: 100%;
   bottom: 0;
 }
+
+
+
+/* Layout improvements */
+.service-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service-box {
+  background-color: white;
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Contact form styling */
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea, button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkblue;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+ 
+}
