@@ -83,10 +83,19 @@ form {
 }
 
 /* Common styling for input boxes, text areas, and buttons */
-input, textarea, button {
+input, button {
   padding: 10px;                   /* Expand clickable area */
   border-radius: 5px;              /* Rounded corners */
-  border: 1px solid #ccc;        
+  border: 1px solid #ccc; 
+}
+
+textarea {
+  padding: 10px;                   /* Expand clickable area */
+  border-radius: 5px;              /* Rounded corners */
+  border: 1px solid #ccc; 
+  resize: vertical;     
+  height: 40px;  
+  min-height: 40px;
 }
 
 /* Submit button */
