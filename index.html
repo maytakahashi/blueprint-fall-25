@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Metadata -->
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
@@ -8,16 +9,22 @@
             content="Portfolio website with HTML forms and flexbox layout"
         />
         <title>Aditya’s Webpage</title>
+
+        <!-- Linking external CSS file for styling -->
         <link rel="stylesheet" href="styles.css" />
     </head>
+
     <body>
+        <!-- Title and subtitle -->
         <header>
             <h1>Welcome to My Website</h1>
             <p>Exploring HTML & CSS — Week 2</p>
         </header>
 
+        <!-- Navigation menu to jump to different page sections -->
         <nav>
             <ul>
+                <!-- Each link scrolls to the section with matching id -->
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -25,7 +32,10 @@
             </ul>
         </nav>
 
+        <!-- Main content area -->
         <main>
+            <!-- About section -->
+            <!-- Notice how the id matches the navigation link -->
             <section id="about">
                 <h2>About Me</h2>
                 <p>
@@ -34,8 +44,12 @@
                 </p>
             </section>
 
+            <!-- Service section -->
+            <!-- Demonstrates flexbox layout for multiple content boxes -->
             <section id="services">
                 <h2>Services</h2>
+
+                <!-- Container uses flexbox to align service boxes side by side -->
                 <div class="service-container">
                     <div class="service-box">
                         <h3>Web Design</h3>
@@ -44,6 +58,7 @@
                             CSS, and JS.
                         </p>
                     </div>
+
                     <div class="service-box">
                         <h3>Tutoring</h3>
                         <p>
@@ -54,6 +69,7 @@
                 </div>
             </section>
 
+            <!-- Projects section -->
             <section id="projects">
                 <h2>Projects</h2>
 
@@ -76,9 +92,14 @@
                 </div>
             </section>
 
+            <!-- Contact section -->
+            <!-- Interactive form allowing users to send a message -->
             <section id="contact">
                 <h2>Contact Me</h2>
+
+                <!-- "action" is left as "#" for demo; it would normally link to backend -->
                 <form action="#" method="post">
+                    <!-- Text input for name-->
                     <label for="name">Name:</label>
                     <input
                         type="text"
@@ -88,6 +109,8 @@
                         required
                     />
 
+                    <!-- Email input -->
+                    <!-- Input type automatically validates email format -->
                     <label for="email">Email:</label>
                     <input
                         type="email"
@@ -97,6 +120,7 @@
                         required
                     />
 
+                    <!-- Multi-line input box for longer messages -->
                     <label for="message">Message:</label>
                     <textarea
                         id="message"
@@ -105,9 +129,13 @@
                         placeholder="Your message..."
                     ></textarea>
 
+                    <!-- Submit button -->
                     <button type="submit">Submit</button>
                 </form>
             </section>
         </main>
+        <footer>
+            <p>&copy; 2024 Aditya's Webpage</p>
+        </footer>
     </body>
 </html>

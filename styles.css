@@ -1,113 +1,120 @@
-/* General body styling */
+
+/* Base styling applied to the entire webpage */
 body {
-  font-family: Arial, sans-serif;
-  background-color: antiquewhite;
-  margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif;  
+  background-color: antiquewhite;  
+  margin: 0;                       /* Remove default browser margins */
+  padding: 0;                      /* Remove default padding */
 }
 
-/* Header */
 header {
-  background-color: blue;
-  color: white;
-  text-align: center;
-  padding: 20px;
+  background-color: blue;         
+  color: white;                    
+  text-align: center;              
+  padding: 20px;                   
 }
 
-/* Navigation bar */
+/* Navigation bar styling */
+
 nav ul {
-  list-style: none;
-  margin: 0;
+  list-style: none;                /* No bullet points */
+  margin: 0;                       
   padding: 0;
-  background-color: #333;
+  background-color: #333;          
   text-align: center;
 }
 
+/* Each list item displays inline horizontally */
 nav ul li {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 20px;              /* Spacing between nav links */
 }
 
+/* Styling for links */
 nav ul li a {
-  color: white;
-  text-decoration: none;
-  padding: 10px 15px;
-  display: inline-block;
+  color: white;                   
+  text-decoration: none;           /* Remove underlines */
+  padding: 10px 15px;              /* Add clickable area */
+  display: inline-block;           /* Allow padding to apply correctly */
 }
 
+/* Hover effect: link background lightens when hovered */
 nav ul li a:hover {
   background-color: #555;
 }
 
-/* Main content */
+/* Main content area styling */
 main {
-  padding: 20px;
+  padding: 20px;                   /* Adds space around all main sections */
   text-align: center;
 }
 
-h2 {
-  color: #333;
-}
-
-/* Footer */
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-}
 
 
 
-/* Layout improvements */
+/* Flexbox layout for services section */
+
+/* Container for multiple service boxes */
 .service-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  display: flex;                   
+  justify-content: center;         /* Centers boxes horizontally */
+  gap: 20px;                       /* Space between boxes */
+  flex-wrap: wrap;                 /* Allows boxes to stack on small screens */
 }
 
+/* Individual service box styling */
 .service-box {
   background-color: white;
-  border: 2px solid #333;
-  border-radius: 10px;
+  border: 2px solid #333;          /* Adds clear border outline */
+  border-radius: 10px;             /* Rounds the corners */
   padding: 15px;
-  width: 250px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  width: 250px;                   
 }
 
 /* Contact form styling */
+
+/* Layout for form elements using CSS Grid */
 form {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
-  max-width: 400px;
-  margin: auto;
+  display: grid;                  
+  grid-template-columns: 1fr;      /* Single column layout */
+  gap: 10px;                       /* Vertical spacing between elements */
+  max-width: 400px;                
+  margin: auto;                    /* Center horizontally */
 }
 
+/* Common styling for input boxes, text areas, and buttons */
 input, textarea, button {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+  padding: 10px;                   /* Expand clickable area */
+  border-radius: 5px;              /* Rounded corners */
+  border: 1px solid #ccc;        
 }
 
+/* Submit button */
 button {
   background-color: blue;
   color: white;
-  cursor: pointer;
+  cursor: pointer;                 /* Pointer cursor on hover */
 }
 
+/* Button hover color change */
 button:hover {
   background-color: darkblue;
 }
 
-/* Responsive design */
+/* Footer styling */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;              
+  width: 100%;
+}
+
+/* Responsive Design */
+
+/* Applies only when the screen width is 600px or smaller (e.g., phones) */
 @media (max-width: 600px) {
   header h1 {
-    font-size: 1.5em;
+    font-size: 1.5em;              /* Smaller title for small screens */
   }
- 
 }
