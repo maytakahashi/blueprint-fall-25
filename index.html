@@ -21,19 +21,21 @@
       <p>Exploring HTML, CSS, and JavaScript — Week 2</p>
     </header>
 
-    <!-- Navigation menu -->
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+        <!-- Navigation menu to jump to different page sections -->
+        <nav>
+            <ul>
+                <!-- Each link scrolls to the section with matching id -->
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
     <!-- Main content area -->
     <main>
       <!-- About section -->
+      <!-- Notice how the id matches the navigation link -->
       <section id="about">
         <h2>About Me</h2>
         <p>
@@ -48,8 +50,11 @@
       </section>
 
       <!-- Services section -->
+      <!-- Demonstrates flexbox layout for multiple content boxes -->
       <section id="services">
         <h2>Services</h2>
+        
+        <!-- Container uses flexbox to align service boxes side by side -->
         <div class="service-container">
           <div class="service-box">
             <h3>Web Design</h3>
@@ -94,9 +99,12 @@
       </section>
 
       <!-- Contact section -->
+      <!-- Interactive form allowing users to send a message -->
       <section id="contact">
         <h2>Contact Me</h2>
+        <!-- "action" is left as "#" for demo; it would normally link to backend -->
         <form action="#" method="post">
+          <!-- Text input for name-->
           <label for="name">Name:</label>
           <input
             type="text"
@@ -106,6 +114,8 @@
             required
           />
 
+          <!-- Email input -->
+          <!-- Input type automatically validates email format -->
           <label for="email">Email:</label>
           <input
             type="email"
@@ -115,6 +125,7 @@
             required
           />
 
+          <!-- Multi-line input box for longer messages -->
           <label for="message">Message:</label>
           <textarea
             id="message"
@@ -123,6 +134,7 @@
             placeholder="Your message..."
           ></textarea>
 
+          <!-- Submit button -->
           <button type="submit">Submit</button>
         </form>
       </section>
