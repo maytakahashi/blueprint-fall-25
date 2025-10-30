@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./styles.css";
 
+// Import the ServiceBox component
+
 function App() {
   const [formData, setFormData] = useState({
     name: "",
@@ -22,7 +24,7 @@ function App() {
     console.log("Form submitted:", formData);
   };
 
-  const [likes, setLikes] = useState(0);
+  // Like button state
 
   return (
     <div className="app-container">
@@ -56,13 +58,17 @@ function App() {
             coding creativity.
           </p>
 
-          <button className="likeButton" onClick={() => setLikes(likes + 1)}>
-            Like ({likes})
-          </button>
+          {
+            /* Like button here */
+            /* onClick={() => setLikes(likes + 1)} */
+          }
+          
         </section>
 
         <section id="services">
           <h2>Services</h2>
+
+          {/* use the ServiceBox component here */}
 
           <div class="service-container">
             <div class="service-box">
@@ -71,7 +77,6 @@ function App() {
                 Creating responsive and modern websites with HTML, CSS, and JS.
               </p>
             </div>
-
             <div class="service-box">
               <h3>Tutoring</h3>
               <p>
@@ -79,6 +84,10 @@ function App() {
                 effectively.
               </p>
             </div>
+            {/* <ServiceBox
+              title="App Development"
+              description="Building user-friendly mobile applications for iOS and Android."
+            /> */}
           </div>
         </section>
 
@@ -105,7 +114,6 @@ function App() {
               <strong>Technologies:</strong> HTML, CSS, JavaScript
             </p>
           </div>
-
         </section>
 
         <section id="contact">
