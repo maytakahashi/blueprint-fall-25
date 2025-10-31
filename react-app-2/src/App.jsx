@@ -1,0 +1,134 @@
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './styles.css'
+
+function App() {
+  
+
+  return (
+  <div className="App">
+    
+    <header>
+      <h1>Welcome to My Website</h1>
+      <p>Exploring HTML, CSS, and JavaScript — Week 2</p>
+    </header>
+
+        
+        <nav>
+            <ul>
+                
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+    
+    <main>
+      
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          Hi! Im Aditya, a CS major passionate about front-end design
+          and coding creativity.
+        </p>
+        
+        <button id="greetBtn">Say Hello</button>
+        <p id="greetOutput"></p>
+      </section>
+
+      
+      <section id="services">
+        <h2>Services</h2>
+        
+        
+        <div class="service-container">
+          <div class="service-box">
+            <h3>Web Design</h3>
+            <p>
+              Creating responsive and modern websites with HTML,
+              CSS, and JS.
+            </p>
+          </div>
+
+          <div class="service-box">
+            <h3>Tutoring</h3>
+            <p>
+              I help students understand programming concepts
+              clearly and effectively.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project-item">
+          <h3>Weather App</h3>
+          <p>A simple weather application that shows current
+             conditions and forecasts.</p>
+          <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+        </div>
+
+        <div class="project-item">
+          <h3>To-Do List</h3>
+          <p>A task management application to keep track of daily
+             activities.</p>
+          <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+        </div>
+
+        
+        <button id="revealBtn">Reveal Message</button>
+        <p id="revealOutput"></p>
+      </section>
+
+      
+      <section id="contact">
+        <h2>Contact Me</h2>
+        
+        <form action="#" method="post">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@email.com"
+            required
+          />
+
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Your message..."
+          ></textarea>
+
+          
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Aditya's Webpage</p>
+    </footer>
+    <script src="script.js"></script>
+  </div>
+  )
+}
+
+export default App
