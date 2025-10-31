@@ -1,9 +1,12 @@
 import { useState } from "react";
+// IMPORT styles.css INSTEAD DELETE APP.CSS WEEK 4
 import "./styles.css";
 
-// Import the ServiceBox component
+// Import the ServiceBox component WEEK 4
+import ServiceBox from "./service_box.jsx";
 
 function App() {
+  // DONT WORRY ABOUT THE FORM STUFF. WE WILL LEARN LATER, FORMS WILL BE BROKEN FOR NOW.
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -24,7 +27,9 @@ function App() {
     console.log("Form submitted:", formData);
   };
 
-  // Like button state
+
+  // Like button state WEEK 4
+  const [likes, setLikes] = useState(0);
 
   return (
     <div className="app-container">
@@ -60,15 +65,21 @@ function App() {
 
           {
             /* Like button here */
-            /* onClick={() => setLikes(likes + 1)} */
+            /* onClick={() => setLikes(likes + 1)} 
+            WEEK 4 */
           }
+          <button className="like-button" onClick={()=>setLikes(likes + 1)}>
+            Like 👍 ({likes})
+          </button>
           
         </section>
 
         <section id="services">
           <h2>Services</h2>
 
-          {/* use the ServiceBox component here */}
+          {/* use the ServiceBox component here 
+              ALLOWS US TO ADD NEW COMPONENTS MORE EASILY
+              WEEK 4 */}
 
           <div class="service-container">
             <div class="service-box">
@@ -84,10 +95,10 @@ function App() {
                 effectively.
               </p>
             </div>
-            {/* <ServiceBox
+            <ServiceBox
               title="App Development"
               description="Building user-friendly mobile applications for iOS and Android."
-            /> */}
+            />
           </div>
         </section>
 
